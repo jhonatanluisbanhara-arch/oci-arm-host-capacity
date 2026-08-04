@@ -32,7 +32,7 @@ jobs:
         OCI_FINGERPRINT: ${{ secrets.OCI_FINGERPRINT }}
         OCI_REGION: ${{ secrets.OCI_REGION }}
         OCI_SUBNET_ID: ${{ secrets.OCI_SUBNET_OCID }}
-        OCI_IMAGE_ID: ${{ secrets.OCI_IMAGE_ID }}  # <--- CONFIRA SE ESTA LINHA ESTÁ AQUI
+        OCI_IMAGE_ID: ${{ secrets.OCI_IMAGE_ID }}
         OCI_AVAILABILITY_DOMAIN: ${{ secrets.OCI_AVAILABILITY_DOMAIN }}
         # ... demais variáveis
       run: php index.php
