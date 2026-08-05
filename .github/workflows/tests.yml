@@ -34,4 +34,5 @@ jobs:
           OCI_SUBNET_ID: ${{ secrets.OCI_SUBNET_OCID }}
           OCI_IMAGE_ID: ${{ secrets.OCI_IMAGE_ID }}
           OCI_AVAILABILITY_DOMAIN: ${{ secrets.OCI_AVAILABILITY_DOMAIN }}
+          OCI_KEY_FILE: key.pem
         run: php index.php
