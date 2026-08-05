@@ -35,8 +35,8 @@ jobs:
           OCI_IMAGE_ID: ${{ secrets.OCI_IMAGE_ID }}
           OCI_AVAILABILITY_DOMAIN: ${{ secrets.OCI_AVAILABILITY_DOMAIN }}
           OCI_KEY_FILE: key.pem
-          OCI_KEY_FILENAME: key.pem
-          OCI_KEY_FILE_PATH: key.pem
-          OCI_PRIVATE_KEY_FILENAME: key.pem
-          OCI_PRIVATE_KEY_FILE: key.pem
+          OCI_SHAPE: "VM.Standard.A1.Flex"
+          OCI_OCPUS: "4"
+          OCI_MEMORY_IN_GBS: "24"
+          OCI_MAX_INSTANCES: "1"
         run: php index.php
