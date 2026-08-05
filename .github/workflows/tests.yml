@@ -35,4 +35,8 @@ jobs:
           OCI_IMAGE_ID: ${{ secrets.OCI_IMAGE_ID }}
           OCI_AVAILABILITY_DOMAIN: ${{ secrets.OCI_AVAILABILITY_DOMAIN }}
           OCI_KEY_FILE: key.pem
+          OCI_KEY_FILENAME: key.pem
+          OCI_KEY_FILE_PATH: key.pem
+          OCI_PRIVATE_KEY_FILENAME: key.pem
+          OCI_PRIVATE_KEY_FILE: key.pem
         run: php index.php
